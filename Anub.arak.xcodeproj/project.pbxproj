@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F68395EA19CBF32D00E350F4 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = F68395E919CBF32D00E350F4 /* Api.m */; };
+		F6BCE16919C9334800FB7E95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE16819C9334800FB7E95 /* Cocoa.framework */; };
+		F6BCE17319C9334800FB7E95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE17119C9334800FB7E95 /* InfoPlist.strings */; };
+		F6BCE17519C9334800FB7E95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE17419C9334800FB7E95 /* main.m */; };
+		F6BCE17919C9334800FB7E95 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE17719C9334800FB7E95 /* Credits.rtf */; };
+		F6BCE17C19C9334800FB7E95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE17B19C9334800FB7E95 /* AppDelegate.m */; };
+		F6BCE17F19C9334800FB7E95 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE17D19C9334800FB7E95 /* MainMenu.xib */; };
+		F6BCE18119C9334800FB7E95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE18019C9334800FB7E95 /* Images.xcassets */; };
+		F6BCE18819C9334800FB7E95 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE18719C9334800FB7E95 /* XCTest.framework */; };
+		F6BCE18919C9334800FB7E95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE16819C9334800FB7E95 /* Cocoa.framework */; };
+		F6BCE19119C9334800FB7E95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE18F19C9334800FB7E95 /* InfoPlist.strings */; };
+		F6BCE19319C9334800FB7E95 /* Anub_arakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */; };
+		F6BCE1A119C98CB500FB7E95 /* localuser.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE1A019C98CB500FB7E95 /* localuser.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6BCE18A19C9334800FB7E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6BCE15D19C9334700FB7E95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6BCE16419C9334700FB7E95;
+			remoteInfo = Anub.arak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F68395E819CBF32D00E350F4 /* Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
+		F68395E919CBF32D00E350F4 /* Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
+		F6BCE16519C9334800FB7E95 /* Anub.arak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anub.arak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BCE16819C9334800FB7E95 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6BCE16B19C9334800FB7E95 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6BCE16C19C9334800FB7E95 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6BCE16D19C9334800FB7E95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6BCE17019C9334800FB7E95 /* Anub.arak-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anub.arak-Info.plist"; sourceTree = "<group>"; };
+		F6BCE17219C9334800FB7E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6BCE17419C9334800FB7E95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6BCE17619C9334800FB7E95 /* Anub.arak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anub.arak-Prefix.pch"; sourceTree = "<group>"; };
+		F6BCE17819C9334800FB7E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6BCE17A19C9334800FB7E95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6BCE17B19C9334800FB7E95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6BCE17E19C9334800FB7E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6BCE18019C9334800FB7E95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6BCE18619C9334800FB7E95 /* Anub.arakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Anub.arakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BCE18719C9334800FB7E95 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6BCE18E19C9334800FB7E95 /* Anub.arakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anub.arakTests-Info.plist"; sourceTree = "<group>"; };
+		F6BCE19019C9334800FB7E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anub_arakTests.m; sourceTree = "<group>"; };
+		F6BCE19C19C9849F00FB7E95 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		F6BCE19E19C984F400FB7E95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6BCE1A019C98CB500FB7E95 /* localuser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = localuser.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6BCE16219C9334700FB7E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCE16919C9334800FB7E95 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BCE18319C9334800FB7E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCE18919C9334800FB7E95 /* Cocoa.framework in Frameworks */,
+				F6BCE18819C9334800FB7E95 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6BCE15C19C9334700FB7E95 = {
+			isa = PBXGroup;
+			children = (
+				F6BCE16E19C9334800FB7E95 /* Anub.arak */,
+				F6BCE18C19C9334800FB7E95 /* Anub.arakTests */,
+				F6BCE16719C9334800FB7E95 /* Frameworks */,
+				F6BCE16619C9334800FB7E95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6BCE16619C9334800FB7E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE16519C9334800FB7E95 /* Anub.arak.app */,
+				F6BCE18619C9334800FB7E95 /* Anub.arakTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6BCE16719C9334800FB7E95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE19E19C984F400FB7E95 /* CoreGraphics.framework */,
+				F6BCE19C19C9849F00FB7E95 /* CoreText.framework */,
+				F6BCE16819C9334800FB7E95 /* Cocoa.framework */,
+				F6BCE18719C9334800FB7E95 /* XCTest.framework */,
+				F6BCE16A19C9334800FB7E95 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6BCE16A19C9334800FB7E95 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE16B19C9334800FB7E95 /* AppKit.framework */,
+				F6BCE16C19C9334800FB7E95 /* CoreData.framework */,
+				F6BCE16D19C9334800FB7E95 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6BCE16E19C9334800FB7E95 /* Anub.arak */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE17A19C9334800FB7E95 /* AppDelegate.h */,
+				F6BCE17B19C9334800FB7E95 /* AppDelegate.m */,
+				F6BCE17D19C9334800FB7E95 /* MainMenu.xib */,
+				F6BCE18019C9334800FB7E95 /* Images.xcassets */,
+				F6BCE16F19C9334800FB7E95 /* Supporting Files */,
+				F6BCE1A019C98CB500FB7E95 /* localuser.plist */,
+				F68395E819CBF32D00E350F4 /* Api.h */,
+				F68395E919CBF32D00E350F4 /* Api.m */,
+			);
+			path = Anub.arak;
+			sourceTree = "<group>";
+		};
+		F6BCE16F19C9334800FB7E95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE17019C9334800FB7E95 /* Anub.arak-Info.plist */,
+				F6BCE17119C9334800FB7E95 /* InfoPlist.strings */,
+				F6BCE17419C9334800FB7E95 /* main.m */,
+				F6BCE17619C9334800FB7E95 /* Anub.arak-Prefix.pch */,
+				F6BCE17719C9334800FB7E95 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6BCE18C19C9334800FB7E95 /* Anub.arakTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */,
+				F6BCE18D19C9334800FB7E95 /* Supporting Files */,
+			);
+			path = Anub.arakTests;
+			sourceTree = "<group>";
+		};
+		F6BCE18D19C9334800FB7E95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6BCE18E19C9334800FB7E95 /* Anub.arakTests-Info.plist */,
+				F6BCE18F19C9334800FB7E95 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6BCE16419C9334700FB7E95 /* Anub.arak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BCE19619C9334800FB7E95 /* Build configuration list for PBXNativeTarget "Anub.arak" */;
+			buildPhases = (
+				F6BCE16119C9334700FB7E95 /* Sources */,
+				F6BCE16219C9334700FB7E95 /* Frameworks */,
+				F6BCE16319C9334700FB7E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anub.arak;
+			productName = Anub.arak;
+			productReference = F6BCE16519C9334800FB7E95 /* Anub.arak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6BCE18519C9334800FB7E95 /* Anub.arakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BCE19919C9334800FB7E95 /* Build configuration list for PBXNativeTarget "Anub.arakTests" */;
+			buildPhases = (
+				F6BCE18219C9334800FB7E95 /* Sources */,
+				F6BCE18319C9334800FB7E95 /* Frameworks */,
+				F6BCE18419C9334800FB7E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6BCE18B19C9334800FB7E95 /* PBXTargetDependency */,
+			);
+			name = Anub.arakTests;
+			productName = Anub.arakTests;
+			productReference = F6BCE18619C9334800FB7E95 /* Anub.arakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6BCE15D19C9334700FB7E95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = YongbinWang;
+				TargetAttributes = {
+					F6BCE18519C9334800FB7E95 = {
+						TestTargetID = F6BCE16419C9334700FB7E95;
+					};
+				};
+			};
+			buildConfigurationList = F6BCE16019C9334700FB7E95 /* Build configuration list for PBXProject "Anub.arak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6BCE15C19C9334700FB7E95;
+			productRefGroup = F6BCE16619C9334800FB7E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6BCE16419C9334700FB7E95 /* Anub.arak */,
+				F6BCE18519C9334800FB7E95 /* Anub.arakTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6BCE16319C9334700FB7E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCE17319C9334800FB7E95 /* InfoPlist.strings in Resources */,
+				F6BCE1A119C98CB500FB7E95 /* localuser.plist in Resources */,
+				F6BCE18119C9334800FB7E95 /* Images.xcassets in Resources */,
+				F6BCE17919C9334800FB7E95 /* Credits.rtf in Resources */,
+				F6BCE17F19C9334800FB7E95 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BCE18419C9334800FB7E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCE19119C9334800FB7E95 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6BCE16119C9334700FB7E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68395EA19CBF32D00E350F4 /* Api.m in Sources */,
+				F6BCE17C19C9334800FB7E95 /* AppDelegate.m in Sources */,
+				F6BCE17519C9334800FB7E95 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BCE18219C9334800FB7E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BCE19319C9334800FB7E95 /* Anub_arakTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6BCE18B19C9334800FB7E95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6BCE16419C9334700FB7E95 /* Anub.arak */;
+			targetProxy = F6BCE18A19C9334800FB7E95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6BCE17119C9334800FB7E95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BCE17219C9334800FB7E95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6BCE17719C9334800FB7E95 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BCE17819C9334800FB7E95 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6BCE17D19C9334800FB7E95 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BCE17E19C9334800FB7E95 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F6BCE18F19C9334800FB7E95 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BCE19019C9334800FB7E95 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6BCE19419C9334800FB7E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6BCE19519C9334800FB7E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6BCE19719C9334800FB7E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
+				INFOPLIST_FILE = "Anub.arak/Anub.arak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6BCE19819C9334800FB7E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
+				INFOPLIST_FILE = "Anub.arak/Anub.arak-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6BCE19A19C9334800FB7E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anub.arak.app/Contents/MacOS/Anub.arak";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Anub.arakTests/Anub.arakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6BCE19B19C9334800FB7E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anub.arak.app/Contents/MacOS/Anub.arak";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
+				INFOPLIST_FILE = "Anub.arakTests/Anub.arakTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6BCE16019C9334700FB7E95 /* Build configuration list for PBXProject "Anub.arak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BCE19419C9334800FB7E95 /* Debug */,
+				F6BCE19519C9334800FB7E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BCE19619C9334800FB7E95 /* Build configuration list for PBXNativeTarget "Anub.arak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BCE19719C9334800FB7E95 /* Debug */,
+				F6BCE19819C9334800FB7E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BCE19919C9334800FB7E95 /* Build configuration list for PBXNativeTarget "Anub.arakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BCE19A19C9334800FB7E95 /* Debug */,
+				F6BCE19B19C9334800FB7E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6BCE15D19C9334700FB7E95 /* Project object */;
+}
