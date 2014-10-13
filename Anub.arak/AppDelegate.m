@@ -49,7 +49,11 @@
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
     statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:statusMenu];
-    [statusItem setTitle: NSLocalizedString(@"A",@"")];
+    
+    // 添加ip地址
+    NSString *wifiIP = [[[NSHost currentHost] addresses] objectAtIndex:1];
+    [statusItem setTitle: NSLocalizedString(wifiIP,@"")];
+    
     [statusItem setAction:@selector(refreshMenu)];
     [statusItem setHighlightMode:YES];
     
@@ -99,6 +103,7 @@
     [statusMenu addItem:exitMenu];
 
     
+
 }
 
 -(void)setValueProcess:menuItem{
