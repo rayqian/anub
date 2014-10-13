@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F68395EA19CBF32D00E350F4 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = F68395E919CBF32D00E350F4 /* Api.m */; };
+		F68395EC19D0611600E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
+		F68395EF19D0680900E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
+		F68395F119D068B300E350F4 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
+		F68395F319D17C5A00E350F4 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F68395F219D17C5A00E350F4 /* dsa_pub.pem */; };
 		F6BCE16919C9334800FB7E95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE16819C9334800FB7E95 /* Cocoa.framework */; };
 		F6BCE17319C9334800FB7E95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE17119C9334800FB7E95 /* InfoPlist.strings */; };
 		F6BCE17519C9334800FB7E95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE17419C9334800FB7E95 /* main.m */; };
@@ -32,9 +36,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F68395F019D068A000E350F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F68395F119D068B300E350F4 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F68395E819CBF32D00E350F4 /* Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
 		F68395E919CBF32D00E350F4 /* Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
+		F68395EB19D0611600E350F4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		F68395F219D17C5A00E350F4 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		F6BCE16519C9334800FB7E95 /* Anub.arak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anub.arak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BCE16819C9334800FB7E95 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F6BCE16B19C9334800FB7E95 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -54,8 +73,6 @@
 		F6BCE18E19C9334800FB7E95 /* Anub.arakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anub.arakTests-Info.plist"; sourceTree = "<group>"; };
 		F6BCE19019C9334800FB7E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anub_arakTests.m; sourceTree = "<group>"; };
-		F6BCE19C19C9849F00FB7E95 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		F6BCE19E19C984F400FB7E95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F6BCE1A019C98CB500FB7E95 /* localuser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = localuser.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68395EC19D0611600E350F4 /* Sparkle.framework in Frameworks */,
 				F6BCE16919C9334800FB7E95 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68395EF19D0680900E350F4 /* Sparkle.framework in Frameworks */,
 				F6BCE18919C9334800FB7E95 /* Cocoa.framework in Frameworks */,
 				F6BCE18819C9334800FB7E95 /* XCTest.framework in Frameworks */,
 			);
@@ -102,8 +121,7 @@
 		F6BCE16719C9334800FB7E95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6BCE19E19C984F400FB7E95 /* CoreGraphics.framework */,
-				F6BCE19C19C9849F00FB7E95 /* CoreText.framework */,
+				F68395EB19D0611600E350F4 /* Sparkle.framework */,
 				F6BCE16819C9334800FB7E95 /* Cocoa.framework */,
 				F6BCE18719C9334800FB7E95 /* XCTest.framework */,
 				F6BCE16A19C9334800FB7E95 /* Other Frameworks */,
@@ -139,6 +157,7 @@
 		F6BCE16F19C9334800FB7E95 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F68395F219D17C5A00E350F4 /* dsa_pub.pem */,
 				F6BCE17019C9334800FB7E95 /* Anub.arak-Info.plist */,
 				F6BCE17119C9334800FB7E95 /* InfoPlist.strings */,
 				F6BCE17419C9334800FB7E95 /* main.m */,
@@ -176,6 +195,7 @@
 				F6BCE16119C9334700FB7E95 /* Sources */,
 				F6BCE16219C9334700FB7E95 /* Frameworks */,
 				F6BCE16319C9334700FB7E95 /* Resources */,
+				F68395F019D068A000E350F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -243,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6BCE17319C9334800FB7E95 /* InfoPlist.strings in Resources */,
+				F68395F319D17C5A00E350F4 /* dsa_pub.pem in Resources */,
 				F6BCE1A119C98CB500FB7E95 /* localuser.plist in Resources */,
 				F6BCE18119C9334800FB7E95 /* Images.xcassets in Resources */,
 				F6BCE17919C9334800FB7E95 /* Credits.rtf in Resources */,
@@ -400,6 +421,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
 				INFOPLIST_FILE = "Anub.arak/Anub.arak-Info.plist";
@@ -413,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
 				INFOPLIST_FILE = "Anub.arak/Anub.arak-Info.plist";
@@ -429,6 +458,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";
@@ -451,6 +481,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Anub.arak/Anub.arak-Prefix.pch";

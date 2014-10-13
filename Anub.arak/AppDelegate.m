@@ -17,13 +17,21 @@
 @synthesize userName;
 @synthesize status;
 @synthesize statusKey;
+@synthesize aboutMePanel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    //获取应用程序沙盒的Documents目录
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *plistPath1 = [paths objectAtIndex:0];
+    //得到完整的文件名
+    
+    NSString *filename=[plistPath1 stringByAppendingPathComponent:@"anub/Anub.config.plist"];
+    NSLog(@"%@",filename);
+    
     //读取plist
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"localuser" ofType:@"plist"];
-    NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:filename];
     NSLog(@"%@", data);
     
     [submit setAction:@selector(saveUserName)];
@@ -41,7 +49,7 @@
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
     statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:statusMenu];
-    [statusItem setTitle: NSLocalizedString(@"Status",@"")];
+    [statusItem setTitle: NSLocalizedString(@"A",@"")];
     [statusItem setAction:@selector(refreshMenu)];
     [statusItem setHighlightMode:YES];
     
@@ -70,14 +78,26 @@
         [statusMenu addItem:menu];
     }
 
-    //编辑按钮
+//    编辑按钮
 //    NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:@"edit" action:@selector(callPanel) keyEquivalent:@""];
 //    [statusMenu addItem:menu];
     
-    NSMenuItem *menu = [[NSMenuItem alloc] initWithTitle:@"exit" action:@selector(quit) keyEquivalent:@""];
-    [statusMenu addItem:menu];
+    NSMenuItem *fengexianMenu = [[NSMenuItem alloc] initWithTitle:@"-------" action:nil keyEquivalent:@""];
+    [statusMenu addItem:fengexianMenu];
 
     
+    NSMenuItem *freshMenu = [[NSMenuItem alloc] initWithTitle:@"Refresh" action:@selector(refreshMenu) keyEquivalent:@""];
+    [statusMenu addItem:freshMenu];
+    
+    NSMenuItem *aboutMeMenu = [[NSMenuItem alloc] initWithTitle:@"About me" action:@selector(aboutMeMenu) keyEquivalent:@""];
+    [statusMenu addItem:aboutMeMenu];
+    
+    NSMenuItem *fengexianMenu2 = [[NSMenuItem alloc] initWithTitle:@"-------" action:nil keyEquivalent:@""];
+    [statusMenu addItem:fengexianMenu2];
+
+    NSMenuItem *exitMenu = [[NSMenuItem alloc] initWithTitle:@"Exit" action:@selector(quit) keyEquivalent:@""];
+    [statusMenu addItem:exitMenu];
+
     
 }
 
@@ -133,13 +153,28 @@
     userName = textField.stringValue;
     NSLog(@"%@",userName);
     
-    //添加一项内容
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"localuser" ofType:@"plist"];
+    //获取应用程序沙盒的Documents目录
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSLog(@"%@",paths);
+    NSString *plistPath1 = [paths objectAtIndex:0];
+    NSString *filedir=[plistPath1 stringByAppendingPathComponent:@"anub"];
+    
+    BOOL isDir = NO;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL existed = [fileManager fileExistsAtPath:filedir isDirectory:&isDir];
+    if ( !(isDir == YES && existed == YES) )
+    {
+        [fileManager createDirectoryAtPath:filedir withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    
+    
+    //得到完整的文件名
+    NSString *filename=[filedir stringByAppendingPathComponent:@"Anub.config.plist"];
 
     NSMutableDictionary *data = [NSMutableDictionary dictionaryWithObject:userName forKey:@"name"];
     NSLog(@"%@",data);
 
-    [data writeToFile:plistPath atomically:YES];
+    [data writeToFile:filename atomically:YES];
     
     //todo 调用接口，上传用户名。
     [alertPanel orderOut:nil];
@@ -157,6 +192,7 @@
 
 -(void) callPanel{
     NSLog(@"%@",alertPanel);
+    [NSApp activateIgnoringOtherApps:YES];
     [alertPanel center];
     [alertPanel makeKeyAndOrderFront:nil];
 }
@@ -180,7 +216,14 @@
 -(void) callAlert:(NSString *)title{
     NSAlert * a = [NSAlert alertWithMessageText:title defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
     [a runModal];
-    
+}
+
+//打开 about me panel
+-(void) aboutMeMenu{
+    NSLog(@"%@",aboutMePanel);
+    [NSApp activateIgnoringOtherApps:YES];
+    [aboutMePanel center];
+    [aboutMePanel makeKeyAndOrderFront:nil];
 }
 
 

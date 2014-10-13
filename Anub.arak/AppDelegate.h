@@ -15,6 +15,8 @@
 @property (retain) IBOutlet NSTextField *textField;
 @property (retain) IBOutlet NSButton *submit;
 
+@property (strong) IBOutlet NSPanel *aboutMePanel;
+
 
 @property (retain) IBOutlet NSMenu *statusMenu;
 @property (retain) NSStatusItem * statusItem;
