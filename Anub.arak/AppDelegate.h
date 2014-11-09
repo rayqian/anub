@@ -8,8 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "StatusMenuController.h"
-
-
+#import "Polling.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSURLConnectionDelegate, MainDelegate>
 

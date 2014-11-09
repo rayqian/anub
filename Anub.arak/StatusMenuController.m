@@ -125,6 +125,13 @@
     [self initMenu];
 }
 
+-(void) refreshMenuWithStatus:(NSNotification *)_status{
+    status = [NSMutableDictionary dictionaryWithDictionary: _status.object];
+    statusKey = [status allKeys];
+    [self initMenu];
+    NSLog(@"refreshMenuWithStatus");
+}
+
 -(void)getStatus{
     status = [NSMutableDictionary dictionaryWithDictionary: [api getStatus]];
     statusKey = [status allKeys];

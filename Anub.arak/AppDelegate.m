@@ -46,6 +46,15 @@
     }
     [statusMenuController setUserName:userName];
     [statusMenuController setDelegate:self];
+    
+    [[NSNotificationCenter defaultCenter]  addObserver:statusMenuController selector:@selector(refreshMenuWithStatus:) name:@"polling_data" object:nil];
+    
+    
+    Polling * polling = [[Polling alloc]init];
+    NSThread* pollingThread = [[NSThread alloc] initWithTarget:polling
+                                                      selector:@selector(run:)
+                                                        object:nil];
+    [pollingThread start];
 }
 
 

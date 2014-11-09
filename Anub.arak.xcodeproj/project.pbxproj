@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F661A1681A0F40AF0059865D /* StatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F661A1661A0F40AF0059865D /* StatusMenuController.m */; };
+		F661A16F1A0F62AC0059865D /* Polling.m in Sources */ = {isa = PBXBuildFile; fileRef = F661A16E1A0F62AC0059865D /* Polling.m */; };
 		F68395EA19CBF32D00E350F4 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = F68395E919CBF32D00E350F4 /* Api.m */; };
 		F68395EC19D0611600E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
 		F68395EF19D0680900E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		F661A1651A0F40AF0059865D /* StatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuController.h; sourceTree = "<group>"; };
 		F661A1661A0F40AF0059865D /* StatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuController.m; sourceTree = "<group>"; };
+		F661A16D1A0F62AC0059865D /* Polling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polling.h; sourceTree = "<group>"; };
+		F661A16E1A0F62AC0059865D /* Polling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polling.m; sourceTree = "<group>"; };
 		F68395E819CBF32D00E350F4 /* Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
 		F68395E919CBF32D00E350F4 /* Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
 		F68395EB19D0611600E350F4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 		F6BCE16E19C9334800FB7E95 /* Anub.arak */ = {
 			isa = PBXGroup;
 			children = (
+				F661A16D1A0F62AC0059865D /* Polling.h */,
+				F661A16E1A0F62AC0059865D /* Polling.m */,
 				F6BCE17A19C9334800FB7E95 /* AppDelegate.h */,
 				F6BCE17B19C9334800FB7E95 /* AppDelegate.m */,
 				F661A1651A0F40AF0059865D /* StatusMenuController.h */,
@@ -290,6 +295,7 @@
 				F68395EA19CBF32D00E350F4 /* Api.m in Sources */,
 				F6BCE17C19C9334800FB7E95 /* AppDelegate.m in Sources */,
 				F661A1681A0F40AF0059865D /* StatusMenuController.m in Sources */,
+				F661A16F1A0F62AC0059865D /* Polling.m in Sources */,
 				F6BCE17519C9334800FB7E95 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
