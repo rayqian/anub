@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F661A1681A0F40AF0059865D /* StatusMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F661A1661A0F40AF0059865D /* StatusMenuController.m */; };
 		F68395EA19CBF32D00E350F4 /* Api.m in Sources */ = {isa = PBXBuildFile; fileRef = F68395E919CBF32D00E350F4 /* Api.m */; };
 		F68395EC19D0611600E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
 		F68395EF19D0680900E350F4 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68395EB19D0611600E350F4 /* Sparkle.framework */; };
@@ -19,7 +20,6 @@
 		F6BCE17C19C9334800FB7E95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE17B19C9334800FB7E95 /* AppDelegate.m */; };
 		F6BCE17F19C9334800FB7E95 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE17D19C9334800FB7E95 /* MainMenu.xib */; };
 		F6BCE18119C9334800FB7E95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE18019C9334800FB7E95 /* Images.xcassets */; };
-		F6BCE18819C9334800FB7E95 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE18719C9334800FB7E95 /* XCTest.framework */; };
 		F6BCE18919C9334800FB7E95 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BCE16819C9334800FB7E95 /* Cocoa.framework */; };
 		F6BCE19119C9334800FB7E95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6BCE18F19C9334800FB7E95 /* InfoPlist.strings */; };
 		F6BCE19319C9334800FB7E95 /* Anub_arakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */; };
@@ -50,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F661A1651A0F40AF0059865D /* StatusMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMenuController.h; sourceTree = "<group>"; };
+		F661A1661A0F40AF0059865D /* StatusMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMenuController.m; sourceTree = "<group>"; };
 		F68395E819CBF32D00E350F4 /* Api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Api.h; sourceTree = "<group>"; };
 		F68395E919CBF32D00E350F4 /* Api.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Api.m; sourceTree = "<group>"; };
 		F68395EB19D0611600E350F4 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -69,7 +71,6 @@
 		F6BCE17E19C9334800FB7E95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F6BCE18019C9334800FB7E95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F6BCE18619C9334800FB7E95 /* Anub.arakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Anub.arakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6BCE18719C9334800FB7E95 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F6BCE18E19C9334800FB7E95 /* Anub.arakTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anub.arakTests-Info.plist"; sourceTree = "<group>"; };
 		F6BCE19019C9334800FB7E95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6BCE19219C9334800FB7E95 /* Anub_arakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Anub_arakTests.m; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 			files = (
 				F68395EF19D0680900E350F4 /* Sparkle.framework in Frameworks */,
 				F6BCE18919C9334800FB7E95 /* Cocoa.framework in Frameworks */,
-				F6BCE18819C9334800FB7E95 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,6 @@
 			children = (
 				F68395EB19D0611600E350F4 /* Sparkle.framework */,
 				F6BCE16819C9334800FB7E95 /* Cocoa.framework */,
-				F6BCE18719C9334800FB7E95 /* XCTest.framework */,
 				F6BCE16A19C9334800FB7E95 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -144,6 +143,8 @@
 			children = (
 				F6BCE17A19C9334800FB7E95 /* AppDelegate.h */,
 				F6BCE17B19C9334800FB7E95 /* AppDelegate.m */,
+				F661A1651A0F40AF0059865D /* StatusMenuController.h */,
+				F661A1661A0F40AF0059865D /* StatusMenuController.m */,
 				F6BCE17D19C9334800FB7E95 /* MainMenu.xib */,
 				F6BCE18019C9334800FB7E95 /* Images.xcassets */,
 				F6BCE16F19C9334800FB7E95 /* Supporting Files */,
@@ -288,6 +289,7 @@
 			files = (
 				F68395EA19CBF32D00E350F4 /* Api.m in Sources */,
 				F6BCE17C19C9334800FB7E95 /* AppDelegate.m in Sources */,
+				F661A1681A0F40AF0059865D /* StatusMenuController.m in Sources */,
 				F6BCE17519C9334800FB7E95 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

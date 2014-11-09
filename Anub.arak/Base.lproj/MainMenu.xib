@@ -16,14 +16,12 @@
             <connections>
                 <outlet property="aboutMePanel" destination="IUk-ql-AJY" id="SeM-n3-4pN"/>
                 <outlet property="alertPanel" destination="MJg-UU-GV3" id="Ky3-pT-iZE"/>
-                <outlet property="statusMenu" destination="Kei-bv-Vb9" id="Vvl-2l-pXk"/>
                 <outlet property="submit" destination="hta-AN-pwf" id="K6j-2h-fHM"/>
                 <outlet property="textField" destination="scD-RQ-qyd" id="ASf-1f-eNW"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <menu id="Kei-bv-Vb9"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="MJg-UU-GV3" customClass="NSPanel">
+        <window title="Edit Nickname" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="MJg-UU-GV3" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="132" width="261" height="199"/>
@@ -65,10 +63,10 @@
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="384.5" y="195.5"/>
+            <point key="canvasLocation" x="362.5" y="-3.5"/>
         </window>
         <customObject id="CbO-rJ-6Tl" customClass="SUUpdater"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IUk-ql-AJY" customClass="NSPanel">
+        <window title="About Me" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IUk-ql-AJY" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="-1724" y="-21" width="335" height="320"/>
@@ -114,7 +112,7 @@
                     </textField>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="358.5" y="355"/>
+            <point key="canvasLocation" x="778.5" y="57"/>
         </window>
     </objects>
 </document>
