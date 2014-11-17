@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Api : NSObject <NSURLConnectionDelegate>
+@interface Api : NSObject
+
+-(NSDictionary *) getStatus;
+-(NSDictionary *) allocResourceOfUserName:(NSString *) userName resource:(NSString *) res;
+-(NSDictionary *) releaseResourceOfUserName:(NSString *) userName resource:(NSString *) res;
 
 @end
+
+

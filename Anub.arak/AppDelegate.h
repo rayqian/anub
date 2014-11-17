@@ -7,19 +7,25 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Api.h"
+#import "StatusMenuController.h"
+#import "Polling.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSURLConnectionDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSURLConnectionDelegate, MainDelegate>
 
+@property (strong) StatusMenuController * statusMenuController;
+
+//编辑昵称窗口和相关控件
 @property (retain) IBOutlet NSPanel *alertPanel;
 @property (retain) IBOutlet NSTextField *textField;
 @property (retain) IBOutlet NSButton *submit;
 
+//关于我
+@property (retain) IBOutlet NSPanel *aboutMePanel;
 
-@property (retain) IBOutlet NSMenu *statusMenu;
-@property (retain) NSStatusItem * statusItem;
 
+//数据
 @property (strong) NSString * userName;
-@property (strong) NSMutableDictionary * status;
-@property (strong) NSArray * statusKey;
+
+-(void) callAlert:(NSString *)title;
+
 @end
